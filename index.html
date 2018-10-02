@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Cefet-web-terrível</title>
 </head>
 <body>
+	<form>
+		<label>
+			Número de pedras:
+			<input type="number" name="num_pedras" min="0">
+		</label><br>
 
+		<label>
+			Tamando das pedras:
+			<input type="number" name="tam_pedras" min="1" max="7" step=".5" value="3">
+		</label><br>
+
+		<label>
+			Nome:
+			<input type="text" name="nome" pattern="[A-Za-z]">
+		</label><br>
+
+		<label>
+			Cor do céu:
+			<input type="color" name="corceu1">
+		</label><br>
+
+		<label>
+			Cor do céu (degradê):
+			<input type="color" name="corceu2">
+		</label><br>
+
+		<label>
+			Tipo de pedra:
+			<select name="tipo_pedras">
+			  <option value="marroada">marroada</option>
+			  <option value="ametista">ametista</option>
+			  <option value="topazio">topazio</option>
+			  <option value="espinela">espinela</option>
+			</select>
+		</label><br>
+
+		<label>
+			Pedras sortidas:
+			<input type="radio" name="tipo_pedras_sortidas" value="sim" checked> Sim
+  			<input type="radio" name="tipo_pedras_sortidas" value="nao"> Não<br>
+		</label><br>
+
+		<input type="submit" value="Submit"><br>
+
+	</form>
 </body>
 </html>
