@@ -4,50 +4,101 @@
 	<title>Cefet-web-terrível</title>
 </head>
 <body>
-	<form>
-		<label>
-			Número de pedras:
-			<input type="number" name="num_pedras" min="0">
-		</label><br>
+	<form action="http://terrivel.herokuapp.com/monster" method="post">
+		<fieldset>
+			<fieldset class="formulario">
+				<legend>Formulário - POST</legend>
+				<label>
+					Número de pedras:
+					<input type="number" name="num_pedras" min="0">
+				</label><br>
 
-		<label>
-			Tamando das pedras:
-			<input type="number" name="tam_pedras" min="1" max="7" step=".5" value="3">
-		</label><br>
+				<label>
+					Tamando das pedras:
+					<input type="number" name="tam_pedras" min="1" max="7" step=".5" value="3">
+				</label><br>
 
-		<label>
-			Nome:
-			<input type="text" name="nome" pattern="[A-Za-z]">
-		</label><br>
+				<label>
+					Nome:
+					<input type="text" name="nome">
+				</label><br>
 
-		<label>
-			Cor do céu:
-			<input type="color" name="corceu1">
-		</label><br>
+				<label>
+					Cor do céu:
+					<input type="color" name="corCeu1">
+				</label><br>
 
-		<label>
-			Cor do céu (degradê):
-			<input type="color" name="corceu2">
-		</label><br>
+				<label>
+					Cor do céu (degradê):
+					<input type="color" name="corCeu2">
+				</label><br>
 
-		<label>
-			Tipo de pedra:
-			<select name="tipo_pedras">
-			  <option value="marroada">marroada</option>
-			  <option value="ametista">ametista</option>
-			  <option value="topazio">topazio</option>
-			  <option value="espinela">espinela</option>
-			</select>
-		</label><br>
+				<label>
+					Tipo de pedra:
+					<select name="tipo_pedras">
+					  <option value="marroada">marroada</option>
+					  <option value="ametista">ametista</option>
+					  <option value="topazio">topazio</option>
+					  <option value="espinela">espinela</option>
+					</select>
+				</label><br>
 
-		<label>
-			Pedras sortidas:
-			<input type="radio" name="tipo_pedras_sortidas" value="sim" checked> Sim
-  			<input type="radio" name="tipo_pedras_sortidas" value="nao"> Não<br>
-		</label><br>
+				<label>
+					Pedras sortidas:
+					<input type="radio" name="tipo_pedras_sortidas" value="sim" checked> Sim
+		  			<input type="radio" name="tipo_pedras_sortidas" value="nao"> Não<br>
+				</label><br>
+			</fieldset>
+			<input type="submit" value="Submit"><br>
+		</fieldset>
+	</form>
+	<form action="http://terrivel.herokuapp.com/monster" method="get">
+		<fieldset>
+			<fieldset class="formulario">
+				<legend>Formulário - GET</legend>
+				<label>
+					Número de pedras:
+					<input type="number" name="num_pedras" min="0">
+				</label><br>
 
-		<input type="submit" value="Submit"><br>
+				<label>
+					Tamando das pedras:
+					<input type="number" name="tam_pedras" min="1" max="7" step=".5" value="3">
+				</label><br>
 
+				<label>
+					Nome:
+					<input type="text" name="nome">
+				</label><br>
+
+				<label>
+					Cor do céu:
+					<input type="color" name="corCeu1">
+				</label><br>
+
+				<label>
+					Cor do céu (degradê):
+					<input type="color" name="corCeu2">
+				</label><br>
+
+				<label>
+					Tipo de pedra:
+					<select name="tipo_pedras">
+					  <option value="marroada">marroada</option>
+					  <option value="ametista">ametista</option>
+					  <option value="topazio">topazio</option>
+					  <option value="espinela">espinela</option>
+					</select>
+				</label><br>
+
+				<label>
+					Pedras sortidas:
+					<input type="radio" name="tipo_pedras_sortidas" value="sim" checked> Sim
+		  			<input type="radio" name="tipo_pedras_sortidas" value="nao"> Não<br>
+				</label><br>
+			</fieldset>
+			<input type="submit" value="Submit"><br>
+		</fieldset>
 	</form>
 </body>
 </html>
